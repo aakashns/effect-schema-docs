@@ -124,6 +124,29 @@ Danger content
 :::
 ```
 
+## Deployment
+
+### Vercel
+
+1. Push your code to a Git repository
+2. Import the project in [Vercel](https://vercel.com)
+3. Set the build command to `pnpm build`
+4. Set the output directory to `.vitepress/dist`
+
+### Netlify
+
+1. Push your code to a Git repository
+2. Import the project in [Netlify](https://netlify.com)
+3. Set the build command to `pnpm build`
+4. Set the publish directory to `.vitepress/dist`
+
+### Cloudflare Pages
+
+1. Push your code to a Git repository
+2. Create a new project in [Cloudflare Pages](https://pages.cloudflare.com)
+3. Set the build command to `pnpm build`
+4. Set the build output directory to `.vitepress/dist`
+
 ## Contributing
 
 1. Fork the repository
