@@ -410,5 +410,5 @@ const DbUser = Schema.Struct({
 
 - [Filters](/guide/filters) - Validation rules
 - [Transformations](/guide/transformations) - Type conversions
-- [Error Messages](/guide/error-messages) - Custom error handling
+- [Structs](/guide/structs) - Define object schemas
 

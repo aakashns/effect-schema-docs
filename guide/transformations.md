@@ -450,7 +450,7 @@ Schema.encodeSync(Base64)("Hello World")        // "SGVsbG8gV29ybGQ="
 
 ## Next Steps
 
-- [Built-in Transformations](/guide/builtin-transformations) - All pre-built transformations
-- [Custom Transformations](/guide/custom-transformations) - Advanced patterns
-- [Effectful Transformations](/guide/effectful-transformations) - Async transformations
+- [Filters](/guide/filters) - Built-in validation filters
+- [Classes](/guide/classes) - Schema-backed TypeScript classes
+- [JSON Schema](/guide/json-schema) - Generate JSON Schema from definitions
 

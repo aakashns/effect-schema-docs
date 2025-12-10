@@ -388,6 +388,6 @@ import { UserId, Email } from "./brands"
 ## Next Steps
 
 - [Classes](/guide/classes) - Schema-backed TypeScript classes
-- [Recursive Schemas](/guide/recursive-schemas) - Self-referential types
+- [Unions](/guide/unions) - Union types and discriminated unions
 - [Best Practices](/best-practices/) - Schema design patterns
 

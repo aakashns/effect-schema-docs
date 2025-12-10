@@ -369,7 +369,7 @@ In practice, the difference is negligible for most use cases. Prefer readability
 
 ## Next Steps
 
-- [Custom Filters](/guide/custom-filters) - Create your own filters
-- [Error Messages](/guide/error-messages) - Customize error output
+- [Brands](/guide/brands) - Branded types for type safety
 - [Transformations](/guide/transformations) - Change data types
+- [Optional & Nullable](/guide/optional-nullable) - Handle missing values
 

@@ -295,6 +295,6 @@ const PasswordField = Schema.String.pipe(
 
 ## Next Steps
 
-- [Error Messages](/guide/error-messages) - Advanced error customization
 - [Filters](/guide/filters) - Built-in validation filters
+- [Transformations](/guide/transformations) - Type conversions
 - [API Validation](/examples/api-validation) - Server-side validation

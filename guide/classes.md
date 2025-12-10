@@ -467,7 +467,7 @@ console.log(price.format())  // "$99.99"
 
 ## Next Steps
 
-- [Recursive Schemas](/guide/recursive-schemas) - Self-referential types
-- [Extending Schemas](/guide/extending-schemas) - Composition patterns
-- [Annotations](/guide/annotations) - Metadata and customization
+- [Brands](/guide/brands) - Branded types for type safety
+- [Transformations](/guide/transformations) - Type conversions
+- [JSON Schema](/guide/json-schema) - Generate JSON Schema from definitions
 

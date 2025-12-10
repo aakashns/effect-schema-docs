@@ -225,5 +225,5 @@ const query = parseQueryParams(new URL(req.url))
 ## Next Steps
 
 - [Form Validation](/examples/form-validation) - Client-side validation
-- [Error Messages](/guide/error-messages) - Customize validation errors
+- [Filters](/guide/filters) - Built-in validation filters
 - [Transformations](/guide/transformations) - Advanced data transformations

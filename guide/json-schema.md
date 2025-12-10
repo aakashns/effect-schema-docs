@@ -391,7 +391,7 @@ const UserId = Schema.String.pipe(
 
 ## Next Steps
 
-- [Property Testing](/guide/arbitrary) - Generate test data
-- [Pretty Printing](/guide/pretty) - Format values
-- [Annotations](/guide/annotations) - All available annotations
+- [Classes](/guide/classes) - Schema-backed TypeScript classes
+- [Transformations](/guide/transformations) - Type conversions
+- [Best Practices](/best-practices/) - Schema design patterns
 

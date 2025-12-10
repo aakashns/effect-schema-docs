@@ -375,9 +375,3 @@ describe("DateFromString", () => {
 5. **Validate Smart**: At boundaries, with helpful messages
 6. **Optimize**: Cache decoders, use appropriate options
 7. **Test**: Edge cases, roundtrips, property tests
-
-## Next Steps
-
-- [Performance](/best-practices/performance) - Optimization tips
-- [Testing](/best-practices/testing) - Testing strategies
-
