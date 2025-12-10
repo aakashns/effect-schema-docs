@@ -1,0 +1,119 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient matching brand -->
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    
+    <!-- Reverse gradient for contrast -->
+    <linearGradient id="heroGradReverse" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Soft shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#8B5CF6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with subtle gradient -->
+  <circle cx="200" cy="200" r="180" fill="url(#heroGrad)" opacity="0.08"/>
+  
+  <!-- Orbital rings representing data flow -->
+  <ellipse cx="200" cy="200" rx="160" ry="60" stroke="url(#heroGrad)" stroke-width="1.5" fill="none" opacity="0.3" transform="rotate(-25 200 200)"/>
+  <ellipse cx="200" cy="200" rx="140" ry="50" stroke="url(#heroGradReverse)" stroke-width="1.5" fill="none" opacity="0.25" transform="rotate(25 200 200)"/>
+  <ellipse cx="200" cy="200" rx="120" ry="40" stroke="url(#heroGrad)" stroke-width="1.5" fill="none" opacity="0.2" transform="rotate(-10 200 200)"/>
+  
+  <!-- Central hexagon shape (representing structure/schema) -->
+  <g filter="url(#shadow)">
+    <path d="M200 80 L280 130 L280 230 L200 280 L120 230 L120 130 Z" 
+          fill="none" 
+          stroke="url(#heroGrad)" 
+          stroke-width="3"
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Inner hexagon -->
+  <path d="M200 110 L255 145 L255 215 L200 250 L145 215 L145 145 Z" 
+        fill="url(#heroGrad)" 
+        opacity="0.15"/>
+  
+  <!-- Data transformation arrows - bidirectional flow -->
+  <!-- Left incoming arrow (decode) -->
+  <g filter="url(#glow)">
+    <path d="M50 200 L100 200" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="110,200 95,192 95,208" fill="#8B5CF6"/>
+  </g>
+  
+  <!-- Right outgoing arrow (encode) -->
+  <g filter="url(#glow)">
+    <path d="M300 200 L350 200" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="355,200 340,192 340,208" fill="#10B981"/>
+  </g>
+  
+  <!-- Top labels - representing types -->
+  <g opacity="0.9">
+    <!-- Type A indicator -->
+    <rect x="170" y="150" width="60" height="28" rx="6" fill="url(#heroGrad)"/>
+    <text x="200" y="169" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
+          font-size="14" font-weight="600" fill="white" text-anchor="middle">Type</text>
+  </g>
+  
+  <!-- Floating data blocks representing transformation -->
+  <!-- Left block (raw/encoded data) -->
+  <g transform="translate(55, 120)">
+    <rect width="50" height="14" rx="3" fill="#8B5CF6" opacity="0.6"/>
+    <rect y="18" width="35" height="14" rx="3" fill="#8B5CF6" opacity="0.4"/>
+    <rect y="36" width="45" height="14" rx="3" fill="#8B5CF6" opacity="0.5"/>
+  </g>
+  
+  <!-- Right block (typed/validated data) -->
+  <g transform="translate(295, 120)">
+    <rect width="50" height="14" rx="3" fill="#10B981" opacity="0.6"/>
+    <rect y="18" width="35" height="14" rx="3" fill="#10B981" opacity="0.4"/>
+    <rect y="36" width="45" height="14" rx="3" fill="#10B981" opacity="0.5"/>
+  </g>
+  
+  <!-- Small decorative dots around the hexagon -->
+  <circle cx="200" cy="80" r="6" fill="#8B5CF6"/>
+  <circle cx="280" cy="130" r="5" fill="#7C3AED"/>
+  <circle cx="280" cy="230" r="5" fill="#06B6D4"/>
+  <circle cx="200" cy="280" r="6" fill="#06B6D4"/>
+  <circle cx="120" cy="230" r="5" fill="#0D9488"/>
+  <circle cx="120" cy="130" r="5" fill="#10B981"/>
+  
+  <!-- Connecting dots animation suggestion (static representation) -->
+  <circle cx="160" cy="105" r="3" fill="url(#heroGrad)" opacity="0.7"/>
+  <circle cx="240" cy="105" r="3" fill="url(#heroGrad)" opacity="0.7"/>
+  <circle cx="160" cy="255" r="3" fill="url(#heroGrad)" opacity="0.7"/>
+  <circle cx="240" cy="255" r="3" fill="url(#heroGrad)" opacity="0.7"/>
+  
+  <!-- Curly braces representing schema definition -->
+  <text x="140" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
+        font-size="40" font-weight="300" fill="url(#heroGrad)" opacity="0.8">{</text>
+  <text x="245" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
+        font-size="40" font-weight="300" fill="url(#heroGrad)" opacity="0.8">}</text>
+  
+  <!-- Small checkmark inside representing validation -->
+  <path d="M185 205 L195 215 L220 185" 
+        stroke="url(#heroGrad)" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"
+        filter="url(#glow)"/>
+</svg>
+
