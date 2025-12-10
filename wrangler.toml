@@ -1,0 +1,6 @@
+name = "effect-schema"
+compatibility_date = "2025-12-10"
+
+# VitePress builds to .vitepress/dist by default
+[assets]
+directory = "./.vitepress/dist"
